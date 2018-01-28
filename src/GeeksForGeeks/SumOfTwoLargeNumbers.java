@@ -1,4 +1,3 @@
-// Copyright (c) 2018 Boomi, Inc.
 package GeeksForGeeks;
 
 import java.math.BigInteger;
