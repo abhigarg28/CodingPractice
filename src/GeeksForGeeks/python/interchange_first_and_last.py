@@ -1,8 +1,14 @@
 def swap_first_and_last_element_in_a_list(user_list):
-    user_list_length = len(user_list)
-    temp_value = user_list[0]
-    user_list[0] = user_list[user_list_length - 1]
-    user_list[user_list_length - 1] = temp_value
+    # Approach 1
+    # user_list_length = len(user_list)
+    # temp_value = user_list[0]
+    # user_list[0] = user_list[user_list_length - 1]
+    # user_list[user_list_length - 1] = temp_value
+
+    # Approach 2
+    first, *middle, last = user_list
+    user_list = last, *middle, first
+
     return user_list
 
 
